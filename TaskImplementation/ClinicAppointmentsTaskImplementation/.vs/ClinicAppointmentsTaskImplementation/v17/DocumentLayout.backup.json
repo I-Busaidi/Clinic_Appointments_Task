@@ -1,12 +1,139 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Lenovo\\Desktop\\Ibrahim_Projects\\ClinicAppointmentsTask\\TaskImplementation\\ClinicAppointmentsTaskImplementation\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\Desktop\\Ibrahim_Projects\\ClinicAppointmentsTask\\TaskImplementation\\ClinicAppointmentsTaskImplementation\\Migrations\\20241210124321_initialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241210124321_initialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5C4CD02-A900-4EC3-BF59-F5C39372CF0E}|ClinicAppointmentsTaskImplementation.csproj|c:\\users\\lenovo\\desktop\\ibrahim_projects\\clinicappointmentstask\\taskimplementation\\clinicappointmentstaskimplementation\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C4CD02-A900-4EC3-BF59-F5C39372CF0E}|ClinicAppointmentsTaskImplementation.csproj|solutionrelative:models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5C4CD02-A900-4EC3-BF59-F5C39372CF0E}|ClinicAppointmentsTaskImplementation.csproj|c:\\users\\lenovo\\desktop\\ibrahim_projects\\clinicappointmentstask\\taskimplementation\\clinicappointmentstaskimplementation\\models\\clinic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C4CD02-A900-4EC3-BF59-F5C39372CF0E}|ClinicAppointmentsTaskImplementation.csproj|solutionrelative:models\\clinic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5C4CD02-A900-4EC3-BF59-F5C39372CF0E}|ClinicAppointmentsTaskImplementation.csproj|c:\\users\\lenovo\\desktop\\ibrahim_projects\\clinicappointmentstask\\taskimplementation\\clinicappointmentstaskimplementation\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C4CD02-A900-4EC3-BF59-F5C39372CF0E}|ClinicAppointmentsTaskImplementation.csproj|solutionrelative:models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5C4CD02-A900-4EC3-BF59-F5C39372CF0E}|ClinicAppointmentsTaskImplementation.csproj|c:\\users\\lenovo\\desktop\\ibrahim_projects\\clinicappointmentstask\\taskimplementation\\clinicappointmentstaskimplementation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C4CD02-A900-4EC3-BF59-F5C39372CF0E}|ClinicAppointmentsTaskImplementation.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5C4CD02-A900-4EC3-BF59-F5C39372CF0E}|ClinicAppointmentsTaskImplementation.csproj|c:\\users\\lenovo\\desktop\\ibrahim_projects\\clinicappointmentstask\\taskimplementation\\clinicappointmentstaskimplementation\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C4CD02-A900-4EC3-BF59-F5C39372CF0E}|ClinicAppointmentsTaskImplementation.csproj|solutionrelative:applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5C4CD02-A900-4EC3-BF59-F5C39372CF0E}|ClinicAppointmentsTaskImplementation.csproj|c:\\users\\lenovo\\desktop\\ibrahim_projects\\clinicappointmentstask\\taskimplementation\\clinicappointmentstaskimplementation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A5C4CD02-A900-4EC3-BF59-F5C39372CF0E}|ClinicAppointmentsTaskImplementation.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20241210124321_initialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\Ibrahim_Projects\\ClinicAppointmentsTask\\TaskImplementation\\ClinicAppointmentsTaskImplementation\\Migrations\\20241210124321_initialCreate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241210124321_initialCreate.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\Ibrahim_Projects\\ClinicAppointmentsTask\\TaskImplementation\\ClinicAppointmentsTaskImplementation\\Migrations\\20241210124321_initialCreate.cs",
+              "RelativeToolTip": "Migrations\\20241210124321_initialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T12:43:22.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\Ibrahim_Projects\\ClinicAppointmentsTask\\TaskImplementation\\ClinicAppointmentsTaskImplementation\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\Ibrahim_Projects\\ClinicAppointmentsTask\\TaskImplementation\\ClinicAppointmentsTaskImplementation\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAACPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-10T12:41:02.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\Ibrahim_Projects\\ClinicAppointmentsTask\\TaskImplementation\\ClinicAppointmentsTaskImplementation\\Models\\Appointment.cs",
+              "RelativeDocumentMoniker": "Models\\Appointment.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\Ibrahim_Projects\\ClinicAppointmentsTask\\TaskImplementation\\ClinicAppointmentsTaskImplementation\\Models\\Appointment.cs",
+              "RelativeToolTip": "Models\\Appointment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T11:26:54.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\Ibrahim_Projects\\ClinicAppointmentsTask\\TaskImplementation\\ClinicAppointmentsTaskImplementation\\Models\\Patient.cs",
+              "RelativeDocumentMoniker": "Models\\Patient.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\Ibrahim_Projects\\ClinicAppointmentsTask\\TaskImplementation\\ClinicAppointmentsTaskImplementation\\Models\\Patient.cs",
+              "RelativeToolTip": "Models\\Patient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T11:26:32.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Clinic.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\Ibrahim_Projects\\ClinicAppointmentsTask\\TaskImplementation\\ClinicAppointmentsTaskImplementation\\Models\\Clinic.cs",
+              "RelativeDocumentMoniker": "Models\\Clinic.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\Ibrahim_Projects\\ClinicAppointmentsTask\\TaskImplementation\\ClinicAppointmentsTaskImplementation\\Models\\Clinic.cs",
+              "RelativeToolTip": "Models\\Clinic.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T11:26:17.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\Ibrahim_Projects\\ClinicAppointmentsTask\\TaskImplementation\\ClinicAppointmentsTaskImplementation\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\Ibrahim_Projects\\ClinicAppointmentsTask\\TaskImplementation\\ClinicAppointmentsTaskImplementation\\ApplicationDbContext.cs",
+              "RelativeToolTip": "ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T11:20:17.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\Ibrahim_Projects\\ClinicAppointmentsTask\\TaskImplementation\\ClinicAppointmentsTaskImplementation\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\Ibrahim_Projects\\ClinicAppointmentsTask\\TaskImplementation\\ClinicAppointmentsTaskImplementation\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T11:17:25Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

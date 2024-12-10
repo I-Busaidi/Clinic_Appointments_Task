@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ClinicAppointmentsTaskImplementation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e3a0a7e189659493091cd33ba4c34b1df457e90b")]
 [assembly: System.Reflection.AssemblyProductAttribute("ClinicAppointmentsTaskImplementation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ClinicAppointmentsTaskImplementation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
