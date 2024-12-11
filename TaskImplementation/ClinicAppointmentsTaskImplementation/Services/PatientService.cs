@@ -48,7 +48,7 @@ namespace ClinicAppointmentsTaskImplementation.Services
             return _mapper.Map<PatientDTO>(patient);
         }
 
-        public Patient GetPatientByNameWithNavigation(string name)
+        public Patient GetPatientByNameWithRelatedData(string name)
         {
             var patient = _patientRepository.GetAllPatients()
                 .FirstOrDefault(p => p.patientName.ToLower().Trim() == name.ToLower().Trim());

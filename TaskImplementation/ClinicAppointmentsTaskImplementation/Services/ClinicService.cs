@@ -50,7 +50,7 @@ namespace ClinicAppointmentsTaskImplementation.Services
             return _mapper.Map<ClinicDTO>(clinic);
         }
 
-        public Clinic GetClinicByNameWithNavigation(string name)
+        public Clinic GetClinicByNameWithRelatedData(string name)
         {
             var clinic = _clinicRepository.GetAllClinics()
                 .FirstOrDefault(c => c.clinicSpec.ToLower().Trim() == name.ToLower().Trim());

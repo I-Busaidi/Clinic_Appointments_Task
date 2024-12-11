@@ -11,6 +11,6 @@ namespace ClinicAppointmentsTaskImplementation.Services
         PatientDTO GetPatientById(int id);
         PatientDTO GetPatientByName(string name);
         void UpdatePatient(string name, PatientDTO patientDto);
-        Patient GetPatientByNameWithNavigation(string name);
+        Patient GetPatientByNameWithRelatedData(string name);
     }
 }

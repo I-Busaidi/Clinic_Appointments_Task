@@ -63,7 +63,7 @@ namespace ClinicAppointmentsTaskImplementation.Services
 
         public List<AppointmentDTO> GetPatientAppointments(string name)
         {
-            var patient = _patientService.GetPatientByNameWithNavigation(name);
+            var patient = _patientService.GetPatientByNameWithRelatedData(name);
             if (patient.PatientAppointments == null || patient.PatientAppointments.Count == 0)
             {
                 throw new InvalidOperationException($"{name} has no appointments.");
@@ -82,7 +82,7 @@ namespace ClinicAppointmentsTaskImplementation.Services
 
         public List<AppointmentDTO> GetClinicAppointments(string name)
         {
-            var clinic = _clinicService.GetClinicByNameWithNavigation(name);
+            var clinic = _clinicService.GetClinicByNameWithRelatedData(name);
             if (clinic.ClinicAppointments == null || clinic.ClinicAppointments.Count == 0)
             {
                 throw new InvalidOperationException($"{name} clinic has no appointments currently.");
@@ -101,8 +101,8 @@ namespace ClinicAppointmentsTaskImplementation.Services
 
         public (DateTime, string, string) AddAppointment(string clinicName, string patientName, DateTime date)
         {
-            var clinic = _clinicService.GetClinicByNameWithNavigation(clinicName);
-            var patient = _patientService.GetPatientByNameWithNavigation(patientName);
+            var clinic = _clinicService.GetClinicByNameWithRelatedData(clinicName);
+            var patient = _patientService.GetPatientByNameWithRelatedData(patientName);
 
             int appointmentCount = clinic.ClinicAppointments.Count(ap => ap.appointmentDate.Date == date.Date);
 

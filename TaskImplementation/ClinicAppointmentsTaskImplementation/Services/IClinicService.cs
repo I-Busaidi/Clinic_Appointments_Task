@@ -12,6 +12,6 @@ namespace ClinicAppointmentsTaskImplementation.Services
         ClinicDTO GetClinicByName(string name);
         void UpdateClinic(string name, ClinicDTO clinicDto);
         void UpdateClinicSpecialization(string currentSpec, string newSpec);
-        Clinic GetClinicByNameWithNavigation(string name);
+        Clinic GetClinicByNameWithRelatedData(string name);
     }
 }
