@@ -48,6 +48,18 @@ namespace ClinicAppointmentsTaskImplementation.Services
             return _mapper.Map<PatientDTO>(patient);
         }
 
+        public Patient GetPatientByNameWithNavigation(string name)
+        {
+            var patient = _patientRepository.GetAllPatients()
+                .FirstOrDefault(p => p.patientName.ToLower().Trim() == name.ToLower().Trim());
+            if (patient == null)
+            {
+                throw new KeyNotFoundException("Patient not found.");
+            }
+
+            return patient;
+        }
+
         public string AddPatient(PatientDTO patientDto)
         {
             var patients = _patientRepository.GetAllPatients().ToList();

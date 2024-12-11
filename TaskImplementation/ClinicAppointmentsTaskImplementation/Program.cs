@@ -23,6 +23,9 @@ namespace ClinicAppointmentsTaskImplementation
             builder.Services.AddScoped<IClinicRepository, ClinicRepository>();
             builder.Services.AddScoped<IClinicService, ClinicService>();
 
+            builder.Services.AddScoped<IAppointmentRepository, AppointmentRepository>();
+            builder.Services.AddScoped<IAppointmentService, AppointmentService>();
+
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();

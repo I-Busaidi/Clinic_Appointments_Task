@@ -9,6 +9,7 @@ namespace ClinicAppointmentsTaskImplementation
         {
             CreateMap<Patient, PatientDTO>();
             CreateMap<Clinic, ClinicDTO>();
+            CreateMap<Appointment, AppointmentDTO>();
         }
     }
 }

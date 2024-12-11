@@ -1,4 +1,5 @@
 ﻿using ClinicAppointmentsTaskImplementation.DTOs;
+using ClinicAppointmentsTaskImplementation.Models;
 
 namespace ClinicAppointmentsTaskImplementation.Services
 {
@@ -10,5 +11,6 @@ namespace ClinicAppointmentsTaskImplementation.Services
         PatientDTO GetPatientById(int id);
         PatientDTO GetPatientByName(string name);
         void UpdatePatient(string name, PatientDTO patientDto);
+        Patient GetPatientByNameWithNavigation(string name);
     }
 }
