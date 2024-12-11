@@ -8,6 +8,7 @@ namespace ClinicAppointmentsTaskImplementation
         public MappingProfile() 
         {
             CreateMap<Patient, PatientDTO>();
+            CreateMap<Clinic, ClinicDTO>();
         }
     }
 }
