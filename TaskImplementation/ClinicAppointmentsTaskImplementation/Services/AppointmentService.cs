@@ -133,8 +133,8 @@ namespace ClinicAppointmentsTaskImplementation.Services
         public void UpdateAppointmentDate(int id, DateTime date)
         {
             var appointment = _appointmentRepository.GetAppointmentById(id);
-            var clinic = _clinicService.GetClinicByNameWithNavigation(appointment.Clinic.clinicSpec);
-            var patient = _patientService.GetPatientByNameWithNavigation(appointment.Patient.patientName);
+            var clinic = _clinicService.GetClinicByNameWithRelatedData(appointment.Clinic.clinicSpec);
+            var patient = _patientService.GetPatientByNameWithRelatedData(appointment.Patient.patientName);
 
             int appointmentSlot = clinic.ClinicAppointments.Count(a => a.appointmentDate.Date == date.Date) + 1;
 
