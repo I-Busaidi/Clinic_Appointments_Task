@@ -3,7 +3,7 @@ using ClinicAppointmentsTaskImplementation.Models;
 
 namespace ClinicAppointmentsTaskImplementation.Services
 {
-    public interface IPatientService
+    public interface IPatientService // implemented by PatientService class.
     {
         string AddPatient(PatientDTO patientDto);
         void DeletePatient(string name);

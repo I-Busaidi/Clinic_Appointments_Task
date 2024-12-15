@@ -3,6 +3,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ClinicAppointmentsTaskImplementation.Repositories
 {
+    /* This class contains the CRUD (Create, Read, Update, Delete) operations
+    related to the Patients table in the database, the class implements
+    IPatientRepository interface for repository pattern implementation.*/
     public class PatientRepository : IPatientRepository
     {
         private readonly ApplicationDbContext _context;
@@ -13,12 +16,15 @@ namespace ClinicAppointmentsTaskImplementation.Repositories
 
         public IEnumerable<Patient> GetAllPatients()
         {
-            return _context.Patients.Include(p => p.PatientAppointments).ToList();
+            return _context.Patients
+                .Include(p => p.PatientAppointments) // Include patient appointments.
+                .ToList();
         }
 
         public Patient GetPatientById(int id)
         {
-            return _context.Patients.Include(p => p.PatientAppointments)
+            return _context.Patients
+                .Include(p => p.PatientAppointments) // Include patient appointments.
                 .FirstOrDefault(p => p.patientId == id);
         }
 

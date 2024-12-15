@@ -7,7 +7,7 @@ namespace ClinicAppointmentsTaskImplementation.Models
     public class Patient
     {
         [Key]
-        [JsonIgnore]
+        [JsonIgnore] // Ignoring this data when serializing for output.
         public int patientId { get; set; }
 
         [Required]
@@ -21,7 +21,7 @@ namespace ClinicAppointmentsTaskImplementation.Models
         [MaxLength(7)]
         public string patientGender { get; set; }
 
-        [JsonIgnore]
+        [JsonIgnore] // Ignoring this data when serializing for output.
         public virtual ICollection<Appointment>? PatientAppointments { get; set; }
     }
 }

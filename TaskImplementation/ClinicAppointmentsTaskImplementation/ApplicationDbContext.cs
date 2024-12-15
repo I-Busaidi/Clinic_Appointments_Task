@@ -12,10 +12,12 @@ namespace ClinicAppointmentsTaskImplementation
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            // creating an index for clinic specialization with unique constraint
             modelBuilder.Entity<Clinic>()
                 .HasIndex(c => c.clinicSpec)
                 .IsUnique();
 
+            // creating an index for patient name with unique constraint
             modelBuilder.Entity<Patient>()
                 .HasIndex(p => p.patientName)
                 .IsUnique();

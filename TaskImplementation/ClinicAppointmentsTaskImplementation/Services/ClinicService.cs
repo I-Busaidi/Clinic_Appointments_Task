@@ -18,7 +18,7 @@ namespace ClinicAppointmentsTaskImplementation.Services
         public List<ClinicDTO> GetAllClinics()
         {
             var clinics = _clinicRepository.GetAllClinics()
-                .OrderBy(c => c.clinicSpec)
+                .OrderBy(c => c.clinicSpec) // order by date in ascending order.
                 .ToList();
             if (clinics == null || clinics.Count == 0)
             {
@@ -40,7 +40,7 @@ namespace ClinicAppointmentsTaskImplementation.Services
         public ClinicDTO GetClinicByName(string name)
         {
             var clinic = _clinicRepository.GetAllClinics()
-                .FirstOrDefault(c => c.clinicSpec.ToLower().Trim() == name.ToLower().Trim());
+                .FirstOrDefault(c => c.clinicSpec.ToLower().Trim() == name.ToLower().Trim()); //trim extra spaces and switch to lowecase for better comparison.
 
             if (clinic == null)
             {
@@ -50,7 +50,7 @@ namespace ClinicAppointmentsTaskImplementation.Services
             return _mapper.Map<ClinicDTO>(clinic);
         }
 
-        public Clinic GetClinicByNameWithRelatedData(string name)
+        public Clinic GetClinicByNameWithRelatedData(string name) // used to get clinic along with related data.
         {
             var clinic = _clinicRepository.GetAllClinics()
                 .FirstOrDefault(c => c.clinicSpec.ToLower().Trim() == name.ToLower().Trim());
@@ -66,11 +66,13 @@ namespace ClinicAppointmentsTaskImplementation.Services
         public string AddClinic(ClinicDTO clinicDto)
         {
             var clinics = _clinicRepository.GetAllClinics().ToList();
-            if (clinics.Any(c => c.clinicSpec.ToLower().Trim() == clinicDto.clinicSpec.ToLower().Trim()))
+
+            // if a clinic with the same specialization already exists.
+            if (clinics.Any(c => c.clinicSpec.ToLower().Trim() == clinicDto.clinicSpec.ToLower().Trim())) 
             {
                 throw new ArgumentException("Clinic with this specialization already exists.");
             }
-
+            // if clinic specialization is empty
             if (string.IsNullOrWhiteSpace(clinicDto.clinicSpec))
             {
                 throw new ArgumentException("Clinic specialization is required.");
@@ -99,6 +101,7 @@ namespace ClinicAppointmentsTaskImplementation.Services
                 throw new ArgumentException("Clinic Specialization is required.");
             }
 
+            //if the updated clinic specialization is used by a different clinic
             if (clinicByName != null && clinicByName.clinicId != existingClinic.clinicId)
             {
                 throw new ArgumentException("A clinic with this specialization already exists.");
@@ -126,6 +129,7 @@ namespace ClinicAppointmentsTaskImplementation.Services
                 throw new KeyNotFoundException("Could not find clinic.");
             }
 
+            // if clinic has appointments booked.
             if (clinic.ClinicAppointments.Any())
             {
                 throw new InvalidOperationException("Clinic has pending appointments.");
@@ -148,6 +152,7 @@ namespace ClinicAppointmentsTaskImplementation.Services
                 throw new KeyNotFoundException("Could not find clinic.");
             }
 
+            //if the updated clinic specialization is used by a different clinic
             if (clinicByName != null && clinicByName.clinicId != clinic.clinicId)
             {
                 throw new ArgumentException("A clinic with this specialization already exists.");

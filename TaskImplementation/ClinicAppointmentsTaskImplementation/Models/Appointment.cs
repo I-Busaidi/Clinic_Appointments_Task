@@ -6,10 +6,10 @@ using System.Text.Json.Serialization;
 
 namespace ClinicAppointmentsTaskImplementation.Models
 {
-    [PrimaryKey(nameof(patientId), nameof(clinicId), nameof(appointmentId))]
+    [PrimaryKey(nameof(patientId), nameof(clinicId), nameof(appointmentId))] // Composite primary key.
     public class Appointment
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)] // Automatically generates ID numbers when a new row is added.
         public int appointmentId { get; set; }
 
         [Required]
@@ -18,14 +18,14 @@ namespace ClinicAppointmentsTaskImplementation.Models
         [Required]
         public int slotNumber { get; set; }
 
-        [ForeignKey("Patient")]
+        [ForeignKey("Patient")] // Foreign key from 'Patient' model.
         public int patientId { get; set; }
-        [JsonIgnore]
+        [JsonIgnore] // Ignoring this data when serializing for output.
         public virtual Patient Patient { get; set; }
 
-        [ForeignKey("Clinic")]
+        [ForeignKey("Clinic")] // Foreign key from 'Clinic' model.
         public int clinicId { get; set; }
-        [JsonIgnore]
+        [JsonIgnore] // Ignoring this data when serializing for output.
         public virtual Clinic Clinic { get; set; }
     }
 }

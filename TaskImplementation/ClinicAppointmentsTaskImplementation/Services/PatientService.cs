@@ -18,7 +18,7 @@ namespace ClinicAppointmentsTaskImplementation.Services
         public List<PatientDTO> GetAllPatients()
         {
             var patients = _patientRepository.GetAllPatients()
-                .OrderBy(p => p.patientName)
+                .OrderBy(p => p.patientName) // ascending order by patient name.
                 .ToList();
             if (patients == null || patients.Count == 0)
             {
@@ -48,6 +48,7 @@ namespace ClinicAppointmentsTaskImplementation.Services
             return _mapper.Map<PatientDTO>(patient);
         }
 
+        // used to get patient along with related data.
         public Patient GetPatientByNameWithRelatedData(string name)
         {
             var patient = _patientRepository.GetAllPatients()
@@ -63,21 +64,25 @@ namespace ClinicAppointmentsTaskImplementation.Services
         public string AddPatient(PatientDTO patientDto)
         {
             var patients = _patientRepository.GetAllPatients().ToList();
+            // if name is empty
             if (string.IsNullOrWhiteSpace(patientDto.patientName))
             {
                 throw new ArgumentException("Name is required.");
             }
 
+            // if name is already used by another patient
             if (patients.Any(p => p.patientName.ToLower().Trim() == patientDto.patientName.ToLower().Trim()))
             {
                 throw new ArgumentException("Patient with this name already exists.");
             }
 
+            // if gender is not male or female.
             if (patientDto.patientGender.ToLower().Trim() != "male" && patientDto.patientGender.ToLower().Trim() != "female")
             {
                 throw new ArgumentException("Gender is not valid.");
             }
 
+            // if age is not entered or equal 0
             if (patientDto.patientAge <= 0)
             {
                 throw new ArgumentException("Patient age must be entered.");
@@ -98,22 +103,27 @@ namespace ClinicAppointmentsTaskImplementation.Services
             {
                 throw new KeyNotFoundException("Patient not found.");
             }
+
+            // if name is empty
             if (string.IsNullOrWhiteSpace(patientDto.patientName))
             {
                 throw new ArgumentException("Patient name cannot be empty.");
             }
 
             var patientByName = _patientRepository.GetAllPatients().FirstOrDefault(p => p.patientName.ToLower().Trim() == patientDto.patientName.ToLower().Trim());
+            //if the updated name is used by a different patient
             if (patientByName != null && patientByName.patientId != currentPatient.patientId)
             {
                 throw new ArgumentException("A patient with this name already exists.");
             }
 
+            // if age is not entered or equal 0
             if (patientDto.patientAge <= 0)
             {
                 throw new ArgumentException("Patient age must be entered.");
             }
 
+            // if gender is not male or female
             if (patientDto.patientGender.ToLower().Trim() != "male" && patientDto.patientGender.ToLower().Trim() != "female")
             {
                 throw new ArgumentException("Gender is not valid.");

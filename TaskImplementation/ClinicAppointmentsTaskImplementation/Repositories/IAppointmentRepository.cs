@@ -2,6 +2,7 @@
 
 namespace ClinicAppointmentsTaskImplementation.Repositories
 {
+    // Implemented by AppointmentRepository
     public interface IAppointmentRepository
     {
         (DateTime, string, string) AddAppointment(Appointment appointment);

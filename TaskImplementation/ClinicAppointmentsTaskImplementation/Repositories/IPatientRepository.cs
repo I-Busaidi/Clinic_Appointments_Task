@@ -2,6 +2,7 @@
 
 namespace ClinicAppointmentsTaskImplementation.Repositories
 {
+    // Implemented by PatientRepository
     public interface IPatientRepository
     {
         string AddPatient(Patient patient);

@@ -15,7 +15,7 @@ namespace ClinicAppointmentsTaskImplementation
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
                     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-            builder.Services.AddAutoMapper(typeof(Program));
+            builder.Services.AddAutoMapper(typeof(MappingProfile));
 
             builder.Services.AddScoped<IPatientRepository, PatientRepository>();
             builder.Services.AddScoped<IPatientService, PatientService>();
